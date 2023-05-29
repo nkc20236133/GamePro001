@@ -10,7 +10,6 @@ public class EnemyGenerater : MonoBehaviour
 
     void Start()
     {
-        
     }
 
     void Update()
