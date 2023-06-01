@@ -5,20 +5,21 @@ using UnityEngine.UI;
 
 public class Timegauge : MonoBehaviour
 {
-    GameObject Time_gauge;
+
+    public Image UIobj;
+    public bool roop;
+    public float countTime = 100.0f;
 
     void Start()
     {
-        this.Time_gauge = GameObject.Find("hpGauge");
-    }
 
-    public void DecreaseHp()
-    {
-        this.Time_gauge.GetComponent<Image>().fillAmount -= 0.1f;
     }
 
     void Update()
     {
-        
+        if(roop)
+        {
+            UIobj.fillAmount -= 1.0f / countTime * Time.deltaTime;
+        }
     }
 }
