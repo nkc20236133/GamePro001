@@ -33,6 +33,9 @@ public class EnemyController : MonoBehaviour
 
         if(d<r1+r2)
         {
+            GameObject Image = GameObject.Find("Image");
+            Image.GetComponent<Timegauge>().HPdelete();
+
             Destroy(gameObject);
         }
     }
