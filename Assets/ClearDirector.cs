@@ -12,6 +12,6 @@ public class ClearDirector : MonoBehaviour
 
     void Update()
     {
-        if()
+       //if()
     }
 }
